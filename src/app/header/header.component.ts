@@ -11,7 +11,7 @@ export class HeaderComponent implements OnInit {
   constructor( public carrinhoService:CarrinhoService) { }
 
   ngOnInit() {
-   
+   sessionStorage.setItem("tamanho",this.carrinhoService.obtemCarrinho().length)
   }
 
 }
