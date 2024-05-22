@@ -8,7 +8,7 @@ export class CarrinhoService {
   itens:IProdutoCarrinho[] = []
   constructor() { }
   obtemCarrinho(){
-    return JSON.parse(localStorage.getItem("carrinho") || "")
+    return JSON.parse(localStorage.getItem("carrinho") || "[]")
   }
 
   adicionarAoCarrinho(produto:IProdutoCarrinho){
