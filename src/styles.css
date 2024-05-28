@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -57,6 +58,36 @@ table {
     --gray: rgba(88, 89, 91, 1);
     --light-gray: rgba(232, 232, 232, 1);    
     --light-gray-2: rgb(247, 247, 247);
+}
+
+input, textarea, select {
+	padding: 10px;
+	font-size: 16px;
+}
+
+input:focus, textarea:focus, select:focus {
+	border: 1px solid rgba(0, 74, 124, 0.6);
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+.error-message {
+    color: red;
+}
+
+.valid {
+    border: 1px solid var(--green);
+}
+
+.invalid {
+    border: 1px solid red;
+}
+
+.invalid:focus {
+	border-color: red;
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

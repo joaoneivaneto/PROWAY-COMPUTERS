@@ -5,14 +5,6 @@
     padding: 8px 0;
 }
 
-input{
-    border: none;
-    outline: none;
-    font-size: 20px;
-}
-input:focus{
-    border-bottom: 2px solid blue;
-}
 .contact-form {
     display: flex;
     flex: 1;
